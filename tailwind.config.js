@@ -3,9 +3,10 @@ module.exports = {
   content: ["./*.html", "./src/**/*.css"],
   theme: {
     fontSize: {
-      xs: 12,
-      sm: 14,
-      md: 16,
+      xs: "0.75rem",
+      sm: "0.875rem",
+      md: "1rem",
+      xl: "2.5rem",
     },
     colors: {
       transparent: "transparent",
