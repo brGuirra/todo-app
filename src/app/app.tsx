@@ -1,10 +1,10 @@
-import { Logo } from "components/atoms";
+import { Input } from "components/atoms";
 import styles from "./app.module.css";
 
 const App = (): JSX.Element => {
   return (
     <main className={styles.main}>
-      <Logo />
+      <Input placeholder="Adicione uma tarefa" />
     </main>
   );
 };
