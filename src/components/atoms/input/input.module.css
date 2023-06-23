@@ -1,5 +1,5 @@
 .input {
-  @apply p-4 rounded-lg border border-gray-700 bg-gray-500;
+  @apply p-4 rounded-lg border border-gray-700 bg-gray-500 text-gray-100;
 }
 
 .input::placeholder {
