@@ -17,6 +17,9 @@ module.exports = {
       md: "1rem",
       xl: "2.5rem",
     },
+    boxShadow: {
+      sm: "0px 2px 8px 0px rgba(0, 0, 0, 0.06)",
+    },
     colors: {
       transparent: "transparent",
       black: "#000",
