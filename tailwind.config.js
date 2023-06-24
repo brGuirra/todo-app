@@ -29,8 +29,8 @@ module.exports = {
         200: "#4ea8de",
       },
       purple: {
-        500: "#8284fa",
-        200: "#5e60ce",
+        500: "#5e60ce",
+        200: "#8284fa",
       },
     },
     extend: {
