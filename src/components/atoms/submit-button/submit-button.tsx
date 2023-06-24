@@ -1,6 +1,6 @@
-import { PlusCircle } from "@phosphor-icons/react";
-
 import styles from "./submit-button.module.css";
+
+import { PlusCircle } from "@phosphor-icons/react";
 
 export const SubmitButton = () => {
   return (

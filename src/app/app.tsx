@@ -1,12 +1,10 @@
-import { Form } from "components/molecules";
-
-import styles from "./app.module.css";
+import { Header } from "components/organisms";
 
 const App = (): JSX.Element => {
   return (
-    <main className={styles.main}>
-      <Form />
-    </main>
+    <>
+      <Header />
+    </>
   );
 };
 

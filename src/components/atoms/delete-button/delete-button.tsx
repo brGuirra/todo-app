@@ -1,6 +1,6 @@
-import { Trash } from "@phosphor-icons/react";
-
 import styles from "./delete-button.module.css";
+
+import { Trash } from "@phosphor-icons/react";
 
 export const DeleteButton = () => {
   return (

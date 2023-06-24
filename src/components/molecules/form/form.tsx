@@ -1,6 +1,6 @@
-import { Input, SubmitButton } from "components/atoms";
-
 import styles from "./form.module.css";
+
+import { Input, SubmitButton } from "components/atoms";
 
 export const Form = () => {
   return (

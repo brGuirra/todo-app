@@ -1,0 +1,7 @@
+.header {
+  @apply bg-gray-700 h-[12.5rem] relative flex justify-center items-center;
+}
+
+.formWrapper {
+  @apply max-w-3xl absolute -bottom-[1.625rem] inset-x-0 mx-auto px-4;
+}

@@ -1,7 +1,7 @@
+import styles from "./checkbox.module.css";
+
 import { CheckCircle, Circle } from "@phosphor-icons/react";
 import { ButtonHTMLAttributes } from "react";
-
-import styles from "./checkbox.module.css";
 
 type CheckBoxProps = {
   checked: boolean;
