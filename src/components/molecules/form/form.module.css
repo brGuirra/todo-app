@@ -1,0 +1,7 @@
+.form {
+  @apply flex gap-2 w-full max-w-3xl;
+}
+
+.form input {
+  @apply flex-1;
+}

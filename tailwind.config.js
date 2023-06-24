@@ -2,6 +2,15 @@
 module.exports = {
   content: ["./*.html", "./src/**/*.css"],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        desktop: "1.5rem",
+      },
+      screens: {
+        desktop: "1440px",
+      },
+    },
     fontSize: {
       xs: "0.75rem",
       sm: "0.875rem",
