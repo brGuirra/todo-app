@@ -7,7 +7,7 @@ type CheckBoxProps = {
   checked: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const CheckBox = ({ checked, ...props }: CheckBoxProps) => {
+export const CheckBox = ({ checked, ...props }: CheckBoxProps): JSX.Element => {
   return (
     <button
       type="button"

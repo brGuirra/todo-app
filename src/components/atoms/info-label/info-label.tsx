@@ -6,7 +6,11 @@ type InfoLabelProps = {
   color: "blue" | "purple";
 };
 
-export const InfoLabel = ({ title, value, color }: InfoLabelProps) => {
+export const InfoLabel = ({
+  title,
+  value,
+  color,
+}: InfoLabelProps): JSX.Element => {
   return (
     <div className={styles.infoLabel}>
       <span className={styles[color]}>{title}</span>

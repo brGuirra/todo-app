@@ -2,7 +2,7 @@ import styles from "./submit-button.module.css";
 
 import { PlusCircle } from "@phosphor-icons/react";
 
-export const SubmitButton = () => {
+export const SubmitButton = (): JSX.Element => {
   return (
     <button type="submit" className={styles.submitButton}>
       <span>Criar</span>

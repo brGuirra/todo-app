@@ -3,7 +3,7 @@ import styles from "./header.module.css";
 import { Form } from "components/molecules";
 import { Logo } from "components/atoms";
 
-export const Header = () => {
+export const Header = (): JSX.Element => {
   return (
     <header className={styles.header}>
       <Logo />

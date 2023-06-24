@@ -1,7 +1,7 @@
 import { InfoLabel } from "components/atoms";
 import styles from "./info.module.css";
 
-export const Info = () => {
+export const Info = (): JSX.Element => {
   return (
     <div className={styles.info}>
       <InfoLabel title="Tarefas criadas" value="5" color="blue" />
