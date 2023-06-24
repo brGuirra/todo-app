@@ -1,0 +1,3 @@
+.deleteButton {
+  @apply text-gray-300 p-1 rounded hover:text-red-400 hover:bg-gray-400 transition-colors cursor-pointer;
+}
