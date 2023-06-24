@@ -1,0 +1,21 @@
+.infoLabel {
+  @apply flex items-center gap-2;
+}
+
+.title {
+  @apply text-sm font-bold;
+}
+
+.purple {
+  composes: title;
+  @apply text-purple-200;
+}
+
+.blue {
+  composes: title;
+  @apply text-blue-200;
+}
+
+.value {
+  @apply bg-gray-400 text-gray-200 text-xs font-bold rounded-full px-3 py-[0.125rem];
+}
