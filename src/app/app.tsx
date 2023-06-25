@@ -1,9 +1,10 @@
-import { Header } from "components/organisms";
+import { Header, TaskList } from "components/organisms";
 
 export const App = (): JSX.Element => {
   return (
     <>
       <Header />
+      <TaskList />
     </>
   );
 };

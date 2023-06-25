@@ -1,5 +1,6 @@
-import { InfoLabel } from "components/atoms";
 import styles from "./info.module.css";
+
+import { InfoLabel } from "components/atoms";
 
 export const Info = (): JSX.Element => {
   return (

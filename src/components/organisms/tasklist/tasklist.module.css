@@ -1,0 +1,7 @@
+.taskList {
+  @apply flex flex-col items-center max-w-3xl mx-auto px-4 gap-6;
+}
+
+.list {
+  @apply flex flex-col gap-3;
+}

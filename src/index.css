@@ -13,6 +13,6 @@
   }
 
   #root {
-    @apply flex flex-col gap-16;
+    @apply flex flex-col gap-24;
   }
 }
