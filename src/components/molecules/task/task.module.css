@@ -3,5 +3,15 @@
 }
 
 .description {
+  @apply flex-1;
+}
+
+.undoneDescription {
+  composes: description;
   @apply text-gray-100;
+}
+
+.doneDescription {
+  composes: description;
+  @apply text-gray-300 line-through;
 }

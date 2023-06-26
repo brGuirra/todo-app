@@ -2,13 +2,17 @@ import styles from "./task.module.css";
 
 import { CheckBox, DeleteButton } from "components/atoms";
 
-export const Task = (): JSX.Element => {
+type TaskProps = {
+  done: boolean;
+  description: string;
+};
+
+export const Task = ({ done, description }: TaskProps): JSX.Element => {
   return (
     <li className={styles.task}>
-      <CheckBox checked={false} />
-      <p className={styles.description}>
-        Integer urna interdum massa libero auctor neque turpis turpis semper.
-        Duis vel sed fames integer.
+      <CheckBox checked={done} />
+      <p className={done ? styles.doneDescription : styles.undoneDescription}>
+        {description}
       </p>
       <DeleteButton />
     </li>

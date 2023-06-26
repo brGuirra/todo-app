@@ -18,7 +18,7 @@ export const GlobalStateProvider = ({ children }: GlobalContextProps) => {
   const { data } = useSWR("/api/tasks", fetchTasks);
 
   return (
-    <GlobalStateContext.Provider value={{ tasks: data || [] }}>
+    <GlobalStateContext.Provider value={{ tasks: data?.tasks || [] }}>
       {children}
     </GlobalStateContext.Provider>
   );

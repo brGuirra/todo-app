@@ -1,4 +1,4 @@
-import { faker } from "@faker-js/faker/locale/pt_BR";
+import { faker } from "@faker-js/faker";
 import { createServer, Factory, Model } from "miragejs";
 
 export const makeServer = ({ environment = "development " }) => {
@@ -7,11 +7,14 @@ export const makeServer = ({ environment = "development " }) => {
 
     factories: {
       task: Factory.extend<Partial<API.Task>>({
-        get description() {
-          return faker.word.words(5);
+        description() {
+          return faker.lorem.words({
+            min: 5,
+            max: 10,
+          });
         },
 
-        get done() {
+        done() {
           return faker.datatype.boolean();
         },
       }),

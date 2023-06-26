@@ -11,9 +11,7 @@ export const CheckBox = ({ checked, ...props }: CheckBoxProps): JSX.Element => {
   return (
     <button
       type="button"
-      className={`${styles.checkbox} ${
-        checked ? styles.checked : styles.unchecked
-      }`}
+      className={checked ? styles.checked : styles.unchecked}
       {...props}
     >
       {checked ? <CheckCircle size={24} weight="fill" /> : <Circle size={24} />}

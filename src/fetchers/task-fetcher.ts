@@ -1,2 +1,2 @@
 export const fetchTasks = (url: string) =>
-  fetch(url).then<API.Task[]>((res) => res.json());
+  fetch(url).then<{ tasks: API.Task[] }>((res) => res.json());
