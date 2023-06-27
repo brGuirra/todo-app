@@ -28,6 +28,29 @@ export const makeServer = ({ environment = "development " }) => {
       this.namespace = "api";
 
       this.get("tasks");
+
+      this.post("tasks", (schema, req) => {
+        const { description } = JSON.parse(
+          req.requestBody
+        ) as Partial<API.Task>;
+
+        return schema.create("task", {
+          description,
+          done: false,
+        });
+      });
+
+      this.patch("tasks/:id", (schema, req) => {
+        const id = req.params.id;
+
+        const task = schema.find("task", id);
+
+        task?.update("done", !task.done);
+
+        return task;
+      });
+
+      this.del("tasks/:id");
     },
 
     seeds(server) {
