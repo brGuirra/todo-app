@@ -18,7 +18,11 @@ export const Info = ({
         value={`${totalTasksCount}`}
         color="blue"
       />
-      <InfoLabel title="Concluídas" value="2 de 5" color="purple" />
+      <InfoLabel
+        title="Concluídas"
+        value={`${doneTasksCount} de ${totalTasksCount}`}
+        color="purple"
+      />
     </div>
   );
 };
